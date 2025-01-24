@@ -16,6 +16,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Meta Tags */}
+        <title>Mini Games Platform</title>
+        <meta name="description" content="Plataforma de mini jogos para momentos de diversão" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Ícone da Guia (Favicon) */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
         {/* Script do Google Ads */}
         <script
           async
@@ -37,7 +46,9 @@ export default function RootLayout({
 
         {/* Rodapé aprimorado */}
         <footer className="w-full bg-[#1E1E1E] py-6 text-center text-gray-400 border-t border-gray-700">
-          <p className="text-md font-medium">&copy; {new Date().getFullYear()} Mini Games Platform - Todos os direitos reservados.</p>
+          <p className="text-md font-medium">
+            &copy; {new Date().getFullYear()} Mini Games Platform - Todos os direitos reservados.
+          </p>
         </footer>
       </body>
     </html>
